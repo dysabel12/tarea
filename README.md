@@ -1,0 +1,2 @@
+# tarea
+angular + netcore app
