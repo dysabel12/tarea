@@ -1,0 +1,40 @@
+https://localhost:44333/api/ExchangeRate/update
+{
+    "exchange_rate": 3.5925,
+    "currency_input" : 2,
+    "currency_output" : 1
+}
+
+
+https://localhost:44333/api/ExchangeRate/calculate
+{
+    "amount_input": 10000,
+    "currency_input" : 2,
+    "currency_output" : 1
+}
+
+https://localhost:44333/api/login
+{"username": "USERAPP"}   
+
+
+cd C:\Users\ACER\source\repos\api_exchange_rate\api_exchange_rate
+docker build -t aspnetapp .
+docker run -p 8080:80 aspnetapp
+
+http://localhost:8080/api/ExchangeRate/update
+{
+    "exchange_rate": 3.5925,
+    "currency_input" : 2,
+    "currency_output" : 1
+}
+
+
+http://localhost:8080/api/ExchangeRate/calculate
+{
+    "amount_input": 10000,
+    "currency_input" : 2,
+    "currency_output" : 1
+}
+
+http://localhost:8080/api/login
+{"username": "USERAPP"}   
